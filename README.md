@@ -1,4 +1,27 @@
-# Get_forecast_from_terminal
+# Bank_control_panel
+There is a remote database (Django ORM) with access data of bank personal (visits, passcards, dates etc.).
+
+The programm helps security staff to trailing users activity on access to bank storage:
+
+- quantity and list of all passcards;
+- quantity of active passcards;
+- output information by some passcard (owner's name, passcode, date of creation, status);
+- list of all visits;
+- list of visits without exit and information by each such visit (when entered, duration of staying);
+- output information about people staying in storage at the moment (names);
+- list of visits of significant passcard;
+- checking the duraton of visits of significant person (more than 10 minutes, more than 1000 minutes);
+- suspicious check for each visit.
+
+There are two versions of same project.
+
+__First version contains in folder Django-ORM-standalone.__
+
+Here you can only launch ```main.py``` and get the result in command line. 
+
+
+
+
 The script makes short links using API of [bit.ly](https://bit.ly) and writes it in terminal by user's query or counts total clicks on short links by user's query.
 
 # How to start
