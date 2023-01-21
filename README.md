@@ -65,6 +65,38 @@ is_active: True
 ...
 ```
 
+For __Django-orm-watching-storage:__
+
+usage: main.py
+  
+Launch on Linux or Windows as simple
+
+```bash
+$ python main.py
+
+# You will see
+
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 21, 2023 - 14:19:33
+Django version 3.2, using settings 'project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CTRL-BREAK.
+
+```
+It will launch your local web-server.
+
+And you need to go at http://127.0.0.1:8000/ at your web-browser where you will operate with database's interface:
+
+
+![web_1](https://user-images.githubusercontent.com/45304364/213862720-04289a6e-0281-43e1-9838-0914fd9dc920.png)
+
+
+![web_2](https://user-images.githubusercontent.com/45304364/213862724-c6a955ce-ba23-4c0f-abb1-334917478ed0.png)
+
+
 # Project Goals
 
 The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
