@@ -10,7 +10,7 @@ The program helps security staff to trailing users activity on access to bank st
 - list of visits without exit and information by each such visit (when entered, duration of staying);
 - output information about people staying in storage at the moment (names);
 - list of visits of significant passcard;
-- checking the duraton of visits of significant person (more than 10 minutes, more than 1000 minutes);
+- checking the duraton of visits of significant person (more than 60 minutes, for tests: more than 10 minutes and more than 1000 minutes);
 - suspicious check for each visit.
 
 There are two versions of same project.
@@ -21,7 +21,7 @@ This version allows you to get access to remote database (see ```settings.py``` 
 
 <ins>*Second version* contains in folder __Django-orm-watching-storage.__</ins>
 
-This version allows you to get access to remote database (see ```settings.py``` for data connection) and displays mentioned above data on local web-site directly in your browser that makes perception more clear, understandable and allows to choose information by each user only by hand (while in first version you have to change the script if you want to obtain information of another user).
+This version allows you to get access to remote database (see ```settings.py``` for data connection) and displays mentioned above data on local web-site directly in your browser that makes perception more clear, understandable and allows to choose information by each user only by hand (while in first version you have to change the script if you want to obtain information about another user).
 
 
 # How to start
@@ -90,11 +90,22 @@ It will launch your local web-server.
 
 And you need to go at http://127.0.0.1:8000/ at your web-browser where you will operate with database's interface:
 
+__Active passcards:__
+
 
 ![web_1](https://user-images.githubusercontent.com/45304364/213862720-04289a6e-0281-43e1-9838-0914fd9dc920.png)
 
 
+__Some passcard's visits:__
+
+
 ![web_2](https://user-images.githubusercontent.com/45304364/213862724-c6a955ce-ba23-4c0f-abb1-334917478ed0.png)
+
+
+__People in bank storage at the moment:__
+
+
+![image](https://user-images.githubusercontent.com/45304364/213862964-fecde7ab-bf02-4b6e-84ba-f609815b932d.png)
 
 
 # Project Goals
