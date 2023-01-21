@@ -1,7 +1,7 @@
-# Bank_control_panel
-There is a remote database (Django ORM) with access data of bank personal (visits, passcards, dates etc.).
+# Bank control panel
+There is a remote database (Django ORM) with access data of bank personal (visits, passcards, dates and etc.).
 
-The programm helps security staff to trailing users activity on access to bank storage:
+The program helps security staff to trailing users activity on access to bank storage:
 
 - quantity and list of all passcards;
 - quantity of active passcards;
@@ -15,14 +15,14 @@ The programm helps security staff to trailing users activity on access to bank s
 
 There are two versions of same project.
 
-__First version contains in folder Django-ORM-standalone.__
+<ins>*First version* contains in folder __Django-ORM-standalone.__</ins>
 
-Here you can only launch ```main.py``` and get the result in command line. 
+This version allows you to get access to remote database (see ```settings.py``` for data connection) and displays mentioned above data in terminal.
 
+<ins>*Second version* contains in folder __Django-orm-watching-storage.__</ins>
 
+This version allows you to get access to remote database (see ```settings.py``` for data connection) and displays mentioned above data on local web-site directly in your browser that makes perception more clear, understandable and allows to choose information by each user only by hand (while in first version you have to change the script if you want to obtain information of another user).
 
-
-The script makes short links using API of [bit.ly](https://bit.ly) and writes it in terminal by user's query or counts total clicks on short links by user's query.
 
 # How to start
 
