@@ -26,38 +26,44 @@ This version allows you to get access to remote database (see ```settings.py``` 
 
 # How to start
 
+First, you have to download this repository.
+
 Python3 should be already installed. Then use pip (or pip3, if there is a conflict with Python2) to install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
-Before running a programm you need to make a .env file in the same directory with your script.
 
 It's recommended to use virtual environment to isolate projects files, libraries and modules.
 
-In this file you need to put your access token (variable `BITLY_TOKEN`) for API of [bit.ly](https://bit.ly) (first - you will make an account on [bit.ly](https://bit.ly), second - you will generate an access token on [app.bitly.com/settings/api/](https://app.bitly.com/settings/api/)). 
 
 ### Run
 
-usage: main.py [-h] url
+For __Django-ORM-standalone:__
 
-positional arguments:
-  url         Your URL or bitlink
-
-optional arguments:
-  -h, --help  show this help message and exit
+usage: main.py
   
 Launch on Linux or Windows as simple
 
 ```bash
-$ python main.py https://sports.ru
+$ python main.py
 
 # You will see
 
-$ python main.py https://sports.ru
-Битлинк: https://bit.ly/3B39pze
-$ python main.py https://bit.ly/3B39pze
-По вашей ссылке прошли: 1 раз(а)
+$ Task #1:
+Количество пропусков: 100
+
+Task #2:
+<QuerySet [<Passcard: Jennifer Martin>, <Passcard: Breanna Campbell>, <Passcard: Susan Long>, <Passcard: Derrick Watts>, <Passcard: Katherine Johnson>, <Passcard: Bobby Stafford>, <Passcard: Barbara Beck>, <Passcard: Renee Sexton>, <Passcard: Glenda Mitchell>, <Passcard: Rebecca Hill>, <Passcard: David Wilson>, <Passcard: Samantha Smith>, <Passcard: John Zhang>, <Passcard: Micheal Melton>, <Passcard: Tricia Parker>, <Passcard: Gabrielle Davis>, <Passcard: Phillip Harrison>, <Passcard: Ashley Bartlett>, <Passcard: Gregory Thompson>, <Passcard: Andre Adams>, '...(remaining elements truncated)...']>
+
+Task #3:
+owner_name: Jennifer Martin
+passcode: ceb148a6-fb27-4106-890c-89dc8cedfe83
+created_at: 2018-01-11 12:28:39+00:00
+is_active: True
+
+...
+```
 
 # Project Goals
 
